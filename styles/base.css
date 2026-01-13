@@ -1,0 +1,193 @@
+/* naming variable for easily use */
+:root {
+  /* Light theme variables */
+  --light-background: #ffffff;       /* White background */
+   --light-background-alt: #f5f5f5;   /* Light gray (secondary sections) */
+  --light-background-card: #fafafa;  /* Very soft gray (cards/panels) */
+  --light-background-highlight: #e8f4fd; /* Pale blue (highlight areas) */
+  --light-text: #1a1a1a;             /* Very dark gray text */
+  --light-primary: #3498db;          /* Bright blue (primary accent) */
+  --light-secondary: #2ecc71;        /* Fresh green (secondary accent) */
+  --light-accent: #f39c12;           /* Warm orange (highlight/accent) */
+  --light-font-main: 'Helvetica Neue', Arial, sans-serif;   /* Sans-serif body font */
+  --light-font-heading: 'Georgia', serif;                   /* Serif heading font */
+
+  /* Dark theme variables */
+  --dark-background: #121212;       /* Near black background */
+   --dark-background-alt: #1e1e1e;    /* Dark gray (secondary sections) */
+  --dark-background-card: #1a1a1a;   /* Slightly lighter black (cards/panels) */
+  --dark-background-highlight: #2c3e50; /* Deep blue-gray (highlight areas) */
+  --dark-text: #e0e0e0;             /* Soft light gray text */
+  --dark-primary: #2980b9;          /* Muted blue (primary accent) */
+  --dark-secondary: #27ae60;        /* Darker green (secondary accent) */
+  --dark-accent: #e67e22;           /* Rich orange (highlight/accent) */
+  --dark-font-main: 'Roboto', Arial, sans-serif;            /* Sans-serif body font */
+  --dark-font-heading: 'Merriweather', serif;               /* Serif heading font */
+    /* Text sizes */
+  --text-xs: 0.75rem;   /* Extra small text (12px) */
+  --text-sm: 0.875rem;  /* Small text (14px) */
+  --text-md: 1rem;      /* Medium text (16px, default body size) */
+  --text-lg: 1.25rem;   /* Large text (20px) */
+  --text-xl: 1.5rem;    /* Extra large text (24px) */
+  --text-xxl: 2rem;     /* Huge text (32px, headings) */
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+header{
+    background-color: var(--dark-background-highlight);
+    color: var(--dark-text);
+}
+header span{
+    display: block;
+    justify-self: center;
+    font-size: var(--text-xxl);
+    font-family: var(--light-font-heading);
+    padding: 20px;
+}
+header nav{
+    /* display: flex; */
+    padding: 30px 0;
+    background-color: var(--dark-background-alt);
+}
+header ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+   list-style-type: none; 
+   margin: 0;
+   padding: 0;
+}
+header a{
+    color: var(--dark-text);
+    text-decoration: none;
+    font-size: var(--text-xl);
+    font-family: var(--dark-font-main);
+}
+header a:hover{
+    color: var(--light-accent);
+}
+main{
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* main left, aside right */
+    max-width: 80%;
+    margin: 0 auto;
+     /* grid-template-rows: auto; */
+      /* header, content, footer */
+      column-gap: 10px;
+}
+main h1{
+    grid-column: 1 / 3;
+   /* spans both columns */
+   justify-self: center;
+   font-family: var(--dark-font-heading);
+   /* font-size: var(--text-xxl); */
+}
+.card{
+    border: 1px solid var(--dark-background-highlight);
+    border-radius: 5px;
+    margin: 20px 0;
+}
+.card span{
+    display: inline-block;
+    background-color: var(--dark-background-highlight);
+    color: var(--dark-text);
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 5px;
+    font-size: var(--text-md);
+    /* line-height: 1.5; */
+    font-family: var(--light-text);
+}
+.aboutme{
+    display: grid;
+    grid-template-columns: 1fr 0.3fr;
+    padding: 10px;
+}
+.aboutme p{
+    font-size: var(--text-sm);
+    line-height: 1.5;
+    font-family: var(--light-text);
+}
+.aboutme img{
+    width: 100%;
+}
+.my-country{
+    display: grid;
+    grid-template-columns: 0.5fr 0.7fr; /* main left, aside right */
+    max-width: 75%;
+    padding: 0 10px;
+    column-gap: 20px;
+  /* grid-template-rows: auto 1fr 0.5fr; */
+   /* header, content, footer */
+}
+.my-country h3{
+    grid-column: 1/3;
+    text-align: center;
+    margin: 0 50px;
+    max-width: 80%;
+    padding: 5px;
+    font-family: var(--dark-font-heading);
+    font-size: var(--text-lg);
+    border-bottom: 1px solid var(--dark-background-highlight);
+}
+figure{
+    margin: 0;
+    padding:50px 0;
+}
+figure img{
+    width: 100%;
+}
+figcaption{
+    text-align: center;
+    font-size: var(--text-sm);
+    line-height: 1.5;
+    font-family: var(--light-text);
+}
+.my-country p{
+    margin: 0;
+    padding: 20px 0;
+    font-size: var(--text-sm);
+    line-height: 1.5;
+    font-family: var(--light-text);
+}
+.web-link{
+     display: flex;
+  /* horizontal */
+  align-items: center; 
+       /* vertical */
+  height: 100%;
+              /* full viewport height */
+  /* margin: 0;  */
+                 /* remove default body margin */
+
+}
+.web-link ul{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.web-link a:hover{
+    color: var(--light-accent);
+}
+
+footer{
+    background-color: var(--dark-background-highlight);
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p, span{
+    padding: 0;
+    margin: 0;
+     font-size: var(--text-md);
+    font-family: var(--light-text);
+    color: var(--dark-text);
+}
+footer p:nth-child(2) {
+  color: var(--dark-accent);
+  padding: 10px 0 0;
+}
