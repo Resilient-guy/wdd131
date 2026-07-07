@@ -8,12 +8,26 @@ body {
   grid-template-columns: 3fr 1fr; /* main left, aside right */
   grid-template-rows: auto 1fr 0.5fr; /* header, content, footer */
   gap: 0;
+  font-family: "Roboto", sans-serif;
   /* justify-content: center;
   text-align: center; */
   /* margin: 0; */
 }
+/* body {
+  
+} */
+
+/* h1 {
+ 
+} */
+
+p {
+  font-weight: 400; /* normal */
+}
+
 h2{
     margin: 0;
+     font-weight: 700; /* bold */
     text-align: center;
     /* color: #fff; */
 }
