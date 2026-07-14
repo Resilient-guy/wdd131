@@ -69,6 +69,12 @@
     .menu-close:not(.show) {
       cursor: default;
     }
+    nav {
+      display: flex;
+      /* justify-content: center;
+      align-items: center;
+      background-color: var(--primary-color); */
+    }
 
      ul {
         width: 100%;
@@ -87,6 +93,18 @@
       color: var(--highlight-color);
       text-decoration: none;
     }
+/* Nav link hover/focus styles */
+header ul a, #menu-list a {
+  transition: color 0.18s ease, background-color 0.18s ease;
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+}
+header ul a:hover, #menu-list a:hover,
+header ul a:focus, #menu-list a:focus {
+  background: rgba(255,255,255,0.12);
+  color: var(--primary-color);
+  outline: none;
+}
     
 
     /* Mobile styles */
@@ -157,7 +175,7 @@
         color: var(--primary-color);
         text-align: center;
       }
-      main h1{
+      main h2{
         font-family: var(--body-font-famly);
         font-weight: var(--regular-weight);
         font-size: 25px;
