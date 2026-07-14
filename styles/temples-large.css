@@ -1,12 +1,5 @@
     /* Tablet styles */
     @media screen and (min-width: 651px) and (max-width: 900px) {
-
-  /* .mobile-head {
-        grid-template-columns: 1fr auto;
-        align-items: center;
-        
-      } */
-
       .menu-toggle,
       .menu-close {
         display: none;
