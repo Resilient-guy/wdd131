@@ -182,7 +182,6 @@ footer p, span{
     color: var(--dark-text);
 }
 footer p:nth-child(2) {
-  color: var(--dark-text);
-  padding: 10px 0 0;
-
+    color: var(--dark-text);
+    padding: 10px 0 0;
 }

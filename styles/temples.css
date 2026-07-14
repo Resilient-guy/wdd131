@@ -1,0 +1,180 @@
+/* ================================
+   Global  Variables
+   ================================ */
+   :root {
+    --body-font-famly: "Roboto", sans-serif;
+    --footer-font-family: "merriweather", cursive;
+    --thin-body-weight: 100;
+    --semiBold-weight: 600;
+    --regular-weight: 400;
+    --medium-weight: 500;
+    --primary-color: #6E7271;
+    --highlight-color: #F9F9F9;
+    --secondary-color: #2E2F2F;
+   }
+
+   html{
+  height: 100%;
+  margin: 0;
+   }
+   body {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
+   }
+   header{
+    background-color: var(--primary-color);
+    color: var(--highlight-color);
+    padding: 0;
+    position: relative;
+   }
+   .mobile-head{
+    display:grid;
+    grid-template-columns: 1fr 1fr; 
+    justify-items: last baseline;
+    column-gap: 5rem;
+    /* align-items: space-between; */
+    color: var(--highlight-color);
+    font-family:var(--body-font-famly);
+    font-weight: var (--medium-weight);
+    font-size: 10px;
+    position: relative;
+   }
+   .menu-controls {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+   }
+
+   .menu-toggle,
+   .menu-close {
+      font-size: 30px;
+      color: var(--highlight-color);
+      font-weight: var(--medium-weight);
+      display: none; /*  hidden on desktop */
+      background: none;
+      border: none;
+      padding: 0;
+    }
+
+    .menu-close {
+      cursor: pointer;
+      font-size: 34px;
+      line-height: 1;
+      display: none;
+    }
+
+    .menu-close:not(.show) {
+      cursor: default;
+    }
+
+     ul {
+        width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      list-style: none;
+      margin: 0;
+      /* display: flex; */
+      /* gap: 20px; */
+    }
+
+     a {
+      cursor: pointer;
+      color: var(--highlight-color);
+      text-decoration: none;
+    }
+    
+
+    /* Mobile styles */
+    @media screen and (max-width: 650px) {
+      .menu-toggle {
+        display: block; /* show hamburger by default */
+      }
+      header{
+        /* margin: 0px; */
+        padding: 0 15px;
+        box-sizing: border-box;
+        width: 100%;
+      }
+      /* .mobile-head h1{ */
+        /* display: none; */
+
+
+      .menu-close.show {
+        display: block; /* show X only when menu is open */
+        position: absolute;
+        top: 0.2rem;
+        width: 100%;
+        /* left: 0.1rem; */
+        /* right: 10px; */
+        z-index: 20;
+      }
+
+      .menu-toggle.hide,
+      .mobile-head h1.hide {
+        display: none; /* hide hamburger/title when menu is open */
+      }
+
+       ul {
+        display: none; /* hide menu initially */
+        flex-direction: column;
+        background: var(--primary-color);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        /* padding: 2.5rem 0 1rem; */
+        z-index: 10;
+      }
+      a{
+         font-weight: var(--medium-weight);
+         font-size: 1.5rem;
+      }
+
+     ul.show {
+        display: flex; /* show menu when toggled */
+        /* position: relative; */
+        /* top: 7rem; */
+        /* bottom: 16rem; */
+      }
+      main.show {
+        margin-top: 15rem;
+      }
+
+      main {
+        transition: margin-top 0.3s ease;
+        margin-top: 20px;
+        font-family: var(--footer-font-family);
+        /* font-size: 25px; */
+        font-weight: var(--thin-body-weight);
+        color: var(--primary-color);
+        text-align: center;
+      }
+      main h1{
+        font-family: var(--body-font-famly);
+        font-weight: var(--regular-weight);
+        font-size: 25px;
+        color: var(--primary-color);
+      }
+    }
+
+    footer{
+        background-color: var(--primary-color);
+        color: var(--highlight-color);
+        font-family: var(--footer-font-family);
+        font-weight: var(--thin-body-weight);
+        font-size: 12px;
+        text-align: center;
+         padding: 5px 0;
+    }
+    footer p, span{
+    padding: 0;
+    margin: 0;
+    }
