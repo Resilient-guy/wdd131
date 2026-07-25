@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>High Hill</title>
+     <meta name="description" content="Description of my place and information about it">
+<meta name="author" content="Kolawole Samuel">
+<link rel="stylesheet" href="styles/place.css">
+<script src="scripts/place.js" defer></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Griffy&family=Merienda:wght@300..900&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+        <header>
+        <!-- <div class="mobile-head"> -->
+            <h1>High Hill</h1>
+            <!-- <div class="menu-controls">
+                <button class="menu-close" aria-label="Go back home">&times;</button>
+                <span class="menu-toggle" aria-label="Open menu">&#9776;</span>
+            </div> -->
+        <!-- </div> -->
+        <!-- <nav>
+        <ul id="menu-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Old</a></li>
+            <li><a href="#">New</a></li>
+            <li><a href="#">Large</a></li>
+            <li><a href="#">Small</a></li>
+        </ul>
+        </nav> -->
+    </header>
+    <main>
+        <section class="hero">
+            <div class="highlight">
+            </div>
+            
+  <picture>
+    <source media="(max-width: 650px)" srcset="images/hero_image2.webp">
+    <source media="(max-width: 900px)" srcset="images/hero_image1.webp">
+    <img src="images/hero_image1.webp" alt="MY HOMETOWN HILL">
+  </picture>
+  <div class="info-box data-box">
+    <h3>Data</h3>
+    <ul>
+      <li><strong>Area:</strong> 587,041 sq km</li>
+      <li><strong>Population:</strong> 27,691,018</li>
+      <li><strong>Capital:</strong> Antananarivo</li>
+      <li><strong>Languages:</strong> Malagasy, French</li>
+      <li><strong>Currency:</strong> Malagasy Ariary</li>
+      <li><strong>Time Zone:</strong> UTC+3</li>
+      <li><strong>Calling Code:</strong> +234</li>
+      <li><strong>Internet TLD:</strong> .mg</li>
+    </ul>
+  </div>
+
+  <div class="info-box weather-box">
+    <div class="weather-header">
+    <h3>Weather </h3>
+    <span class="weather-icon" aria-hidden="true">⛅</span>
+    </div>
+<ul>
+    <li><strong>Temperature:</strong> 10°C</li>
+    <li><strong>Conditions:</strong> Partly Cloudy</li>
+    <li><strong>Wind:</strong> 5 km/h</li>
+   <li id="windChill"><strong>Wind Chill:</strong> N/A</li>
+  </ul>
+  </div>
+</section>
+
+<!-- mobile view -->
+ <section class="mobile-view">
+    <div class="information">
+        <div class="data-info">
+             <h3>Data</h3>
+    <ul>
+      <li><strong>Area:</strong> 587,041 sq km</li>
+      <li><strong>Population:</strong> 27,691,018</li>
+      <li><strong>Capital:</strong> Antananarivo</li>
+      <li><strong>Languages:</strong> Malagasy, French</li>
+      <li><strong>Currency:</strong> Malagasy Ariary</li>
+      <li><strong>Time Zone:</strong> UTC+3</li>
+      <li><strong>Calling Code:</strong> +234</li>
+      <li><strong>Internet TLD:</strong> .mg</li>
+    </ul>
+
+        </div>
+        <div class="weather-info">
+        <h3>Weather </h3>
+    <span class="weather-icon" aria-hidden="true">⛅</span>
+<ul>
+    <li><strong>Temperature:</strong> 10°C</li>
+    <li><strong>Conditions:</strong> Partly Cloudy</li>
+    <li><strong>Wind:</strong> 5 km/h</li>
+   <li id="windChill"><strong>Wind Chill:</strong> N/A</li>
+  </ul>
+        </div>
+    </div>
+ </section>
+    </main>
+         <footer>
+            <p>&copy;
+                <span id="currentyear"> </span>
+                Kolawole Samuel 💻 Nigeria.
+            </p>
+            <p id="lastModified">
+                Last Modified:
+                <span id="lastModifiedDate"></span>
+            </p>
+        </footer>
+</body>
+</html>

@@ -1,0 +1,187 @@
+/* ================================
+   Global  Variables
+   ================================ */
+   :root {
+    --body-font-famly: "Roboto", sans-serif;
+    --footer-font-family: "merriweather", cursive;
+    --header-font-family: "Griffy", system-ui;
+    --thin-body-weight: 100;
+    --semiBold-weight: 600;
+    --regular-weight: 400;
+    --medium-weight: 500;
+    --header-font-weight: 400;
+    --font-style: normal;
+    --primary-color: #CDDFA0;
+    --text-white-light-color: #F9F9F9;
+    --highlight-color: #3185FC;
+    --secondary-color: #2E2F2F;
+    --body-secondry-color: #E2DCDE;
+   }
+
+   html{
+  height: 100%;
+  margin: 0;
+   }
+   body {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    background-color: var(--primary-color);
+   }
+   header{
+    background-color: var(--primary-color);
+     text-align: center;
+        font-family: var(--header-font-family);
+        font-weight: var(--header-font-family);
+        font-size: 20px;
+   }
+   .highlight{
+    /* margin: 0; */
+    background-color: var(--highlight-color);
+    padding: 10px;
+   }
+   .hero {
+  position: relative;
+  /* display: inline-block; */
+  overflow: hidden;
+}
+   .hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.info-box {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.85); /* semi-transparent background */
+  /* padding: 10px; */
+  border-radius: 6px;
+  font-family: var(--footer-font-family);
+  font-size: 0.8rem;
+  font-weight: var(--medium-weight);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* Positioning the boxes */
+.data-box {
+  top: 60px;
+  left: 20px;
+  width: 20%;
+}
+.data-box h3{
+    position: relative;
+    right: 15px;
+    padding: 20px;
+    background-color: var(--highlight-color);
+}
+.data-box li,
+.weather-box li {
+list-style: none;
+  text-decoration: none;
+  text-align: left;
+  line-height: 1.5;
+  display: flex;
+  gap: 2px;
+}
+.data-box li strong,
+.weather-box li strong {
+  min-width: 45%;
+  text-align: right;
+}
+.data-box li strong::after,
+.weather-box li strong::after {
+  content: "";
+}
+
+.data-box li strong,
+.weather-box li strong {
+  margin-right: 5px;
+}
+
+/* .data-box li{
+    text-decoration: none;
+    text-align: left;
+} */
+
+
+.weather-box {
+  bottom: 20px;
+  right: 20px;
+  width: 20%;
+  /* margin: 10px; */
+  /* padding: 10px; */
+}
+.weather-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* pushes icon to the far end */
+  position: relative;
+  right: 15px;
+  padding: 10px;
+  margin: 10px auto;
+  background-color: var(--highlight-color); 
+}
+.weather-icon { 
+    display: inline-block; 
+    font-size: 1.1em;
+} 
+
+.mobile-view{
+    display: none;
+}
+    footer{
+        font-family: var(--header-font-family);
+        font-size: 12px;
+        text-align: center;
+        line-height: 1.5;
+         padding: 30px 0;
+         font-size: 15px;
+    }
+    footer p, span{
+    padding: 0;
+    margin: 0;
+    }
+
+
+       /* Mobile styles */
+    @media screen and (max-width: 650px) {
+        .info-box{
+            display: none;
+        }
+        .mobile-view{
+            display: block;
+        }
+        .information{
+            display: grid;
+            grid-template-columns: 1fr;
+            background: var(--body-secondry-color);
+            text-align: center;
+        }
+        .data-info li,
+.weather-info li {
+list-style: none;
+  text-decoration: none;
+  line-height: 1.5;
+  display: flex;
+  gap: 2px;
+}
+ .data-info li strong,
+ .weather-info li strong {
+  min-width: 45%;
+  text-align: right;
+}
+.data-info li strong::after,
+.weather-info li strong::after {
+  content: "";
+}
+
+.data-info li strong,
+.weather-info li strong {
+  margin-right: 5px;
+}
+
+    }
