@@ -91,22 +91,17 @@ list-style: none;
 .weather-box li strong {
   min-width: 45%;
   text-align: right;
+  margin-right: 5px;
 }
 .data-box li strong::after,
 .weather-box li strong::after {
   content: "";
 }
 
-.data-box li strong,
+/* .data-box li strong,
 .weather-box li strong {
-  margin-right: 5px;
-}
-
-/* .data-box li{
-    text-decoration: none;
-    text-align: left;
+  
 } */
-
 
 .weather-box {
   bottom: 20px;
