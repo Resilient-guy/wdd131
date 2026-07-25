@@ -2,7 +2,7 @@
    Global  Variables
    ================================ */
    :root {
-    --body-font-famly: "Roboto", sans-serif;
+    --body-font-family: "Roboto", sans-serif;
     --footer-font-family: "merriweather", cursive;
     --header-font-family: "Griffy", system-ui;
     --thin-body-weight: 100;
@@ -16,6 +16,7 @@
     --highlight-color: #3185FC;
     --secondary-color: #2E2F2F;
     --body-secondry-color: #E2DCDE;
+    --text-olivegray-color: #878E88;
    }
 
    html{
@@ -35,7 +36,9 @@
      text-align: center;
         font-family: var(--header-font-family);
         font-weight: var(--header-font-family);
-        font-size: 20px;
+        font-size: 25px;
+        color: var(--text-olivegray-color);
+        font-style: var(--font-style);
    }
    .highlight{
     /* margin: 0; */
@@ -98,11 +101,6 @@ list-style: none;
   content: "";
 }
 
-/* .data-box li strong,
-.weather-box li strong {
-  
-} */
-
 .weather-box {
   bottom: 20px;
   right: 20px;
@@ -130,11 +128,12 @@ list-style: none;
 }
     footer{
         font-family: var(--header-font-family);
-        font-size: 12px;
+        font-size: 15px;
         text-align: center;
         line-height: 1.5;
          padding: 30px 0;
-         font-size: 15px;
+         font-size: 20px;
+         color: var(--text-olivegray-color);
     }
     footer p, span{
     padding: 0;
