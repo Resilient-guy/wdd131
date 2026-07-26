@@ -2,22 +2,23 @@
    Global  Variables
    ================================ */
    :root {
-    --body-font-family: "Roboto", sans-serif;
-    --footer-font-family: "merriweather", cursive;
-    --header-font-family: "Griffy", system-ui;
-    --thin-body-weight: 100;
-    --semiBold-weight: 600;
-    --regular-weight: 400;
-    --medium-weight: 500;
-    --header-font-weight: 400;
-    --font-style: normal;
-    --primary-color: #CDDFA0;
-    --text-white-light-color: #F9F9F9;
-    --highlight-color: #3185FC;
-    --secondary-color: #2E2F2F;
-    --body-secondry-color: #E2DCDE;
-    --text-olivegray-color: #878E88;
-   }
+  --body-font-family: "Roboto", sans-serif;
+  --footer-font-family: "Merriweather", cursive;
+  --header-font-family: "Griffy", system-ui;
+  --thin-body-weight: 100;
+  --semiBold-weight: 600;
+  --regular-weight: 400;
+  --medium-weight: 500;
+  --header-font-weight: 400;
+  --font-style: normal;
+  --primary-color: #CDDFA0;
+  --text-white-light-color: #F9F9F9;
+  --highlight-color: #3185FC;
+  --secondary-color: #2E2F2F;
+  --body-secondary-color: #E2DCDE;
+  --text-olivegray-color: #878E88;
+}
+
 
    html{
   height: 100%;
@@ -128,7 +129,6 @@ list-style: none;
 }
     footer{
         font-family: var(--header-font-family);
-        font-size: 15px;
         text-align: center;
         line-height: 1.5;
          padding: 30px 0;
