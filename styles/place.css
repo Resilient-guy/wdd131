@@ -48,7 +48,6 @@
    }
    .hero {
   position: relative;
-  /* display: inline-block; */
   overflow: hidden;
 }
    .hero img {
@@ -81,6 +80,7 @@
     right: 15px;
     padding: 20px;
     background-color: var(--highlight-color);
+    color: var(--body-secondary-color);
 }
 .data-box li,
 .weather-box li {
@@ -118,6 +118,7 @@ list-style: none;
   padding: 10px;
   margin: 10px auto;
   background-color: var(--highlight-color); 
+  color: var(--body-secondary-color);
 }
 .weather-icon { 
     display: inline-block; 
