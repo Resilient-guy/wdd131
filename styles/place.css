@@ -61,7 +61,6 @@
 .info-box {
   position: absolute;
   background: rgba(255, 255, 255, 0.85); /* semi-transparent background */
-  /* padding: 10px; */
   border-radius: 6px;
   font-family: var(--footer-font-family);
   font-size: 0.8rem;
@@ -106,8 +105,6 @@ list-style: none;
   bottom: 20px;
   right: 20px;
   width: 20%;
-  /* margin: 10px; */
-  /* padding: 10px; */
 }
 .weather-header {
   display: flex;
@@ -128,6 +125,20 @@ list-style: none;
 .mobile-view{
     display: none;
 }
+
+/* Tablet styles */
+    @media screen and (min-width: 651px) and (max-width: 900px) {
+        .mobile-view{
+            display: none;
+        }
+        .data-box,
+        .weather-box{
+            width: 40%;
+        }
+
+
+    }
+
     footer{
         font-family: var(--header-font-family);
         text-align: center;
